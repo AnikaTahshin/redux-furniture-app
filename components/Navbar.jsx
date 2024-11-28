@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { RiShoppingCartLine } from "react-icons/ri";
@@ -5,8 +7,6 @@ import { FaRegHeart } from "react-icons/fa";
 
 const Navbar = () => {
   const navItems = [
-   
-
     {
       label: "Home",
       path: "/home",
