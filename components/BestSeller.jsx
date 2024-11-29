@@ -3,12 +3,12 @@ import ProductCard from "./ProductCard";
 import product from "../public/img/Products/products.json";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const FeaturedProducts = () => {
+const BestSeller = () => {
   return (
     <>
       
       <div className="w-full grid grid-cols-3 py-3 gap-3">
-        {product.products.map((item, index) => (
+        {product.products.slice(3,9).map((item, index) => (
           <div key={item.id} className="">
             {/* <h1>{item.name}</h1> */}
             <ProductCard data={item} />
@@ -25,4 +25,4 @@ const FeaturedProducts = () => {
   );
 };
 
-export default FeaturedProducts;
+export default BestSeller;

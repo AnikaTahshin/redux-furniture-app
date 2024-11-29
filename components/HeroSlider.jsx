@@ -8,7 +8,6 @@ import Link from "next/link";
 
 const HeroSlider = () => {
 
-  console.log("see",slides.heroSlider)
  
 
   return (

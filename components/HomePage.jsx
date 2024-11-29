@@ -3,6 +3,9 @@ import React from "react";
 import HeroSlider from "./HeroSlider";
 import Categories from "./Categories";
 import FeaturedProducts from "./FeaturedProducts";
+import OfferBanner from "./OfferBanner";
+import BestSeller from "./BestSeller";
+import NewsLetter from "./NewsLetter";
 const HomePage = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
@@ -29,9 +32,45 @@ const HomePage = () => {
           </h1>
         </div>
         <FeaturedProducts />
-        {/* <Categories /> */}
-      </div>
+              </div>
       {/* featured product section ends */}
+
+      {/* Offer banner section starts */}
+
+      <div className="w-11/12 py-5">
+      <OfferBanner />
+
+      </div>
+
+      {/* Offer banner section ends */}
+
+      {/* Best seller section starts */}
+
+
+
+      <div className="w-11/12 py-5">
+        <div className="title_container py-2">
+          <h1 className="title font-bold text-3xl text-center">
+            Discover Our Best Seller{" "}
+          </h1>
+        </div>
+        <BestSeller />
+      </div>
+
+
+      {/* Best seller section ends */}
+
+
+
+      {/* News Letter section starts */}
+      <div className="w-11/12 py-5">
+      <NewsLetter />
+
+      </div>
+
+      {/* News Letter section ends */}
+
+
     </div>
   );
 };
