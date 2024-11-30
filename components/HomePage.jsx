@@ -6,6 +6,7 @@ import FeaturedProducts from "./FeaturedProducts";
 import OfferBanner from "./OfferBanner";
 import BestSeller from "./BestSeller";
 import NewsLetter from "./NewsLetter";
+import Footer from "./Footer";
 const HomePage = () => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
@@ -69,6 +70,15 @@ const HomePage = () => {
       </div>
 
       {/* News Letter section ends */}
+
+      {/* Footer section starts */}
+
+
+      <div className="w-full bg-gray-100">
+      <Footer />
+
+      </div>
+      {/* Footer section ends */}
 
 
     </div>
