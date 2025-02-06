@@ -8,8 +8,8 @@ const FeaturedProducts = () => {
     <>
       
       <div className="w-full grid grid-cols-3 py-3 gap-3">
-        {product.products.map((item, index) => (
-          <div key={item.id} className="">
+        {product?.products.map((item, index) => (
+          <div key={item?.id} className="">
             {/* <h1>{item.name}</h1> */}
             <ProductCard data={item} />
           </div>

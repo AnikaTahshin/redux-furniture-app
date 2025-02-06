@@ -22,9 +22,9 @@ const HeroSlider = () => {
         navigation={true}
         className="mySwiper"
       >
-        {slides.heroSlider.length > 0 &&
+        {slides?.heroSlider?.length > 0 &&
           slides?.heroSlider?.map((slide) => (
-            <SwiperSlide key={slide.id} className="max-h-[90vh] relative">
+            <SwiperSlide key={slide?.id} className="max-h-[90vh] relative">
               <Image
                 src={`/`+slide?.image}
                 width={400}
@@ -33,11 +33,11 @@ const HeroSlider = () => {
               />
 
               <div className="text-container absolute top-[30%] text-center w-full h-full">
-                <h1 className="font-bold text-5xl text-slate-800">{slide.title}</h1>
-                <p className="text-sm italic py-3 text-gray-100">{slide.subtitle}</p>
+                <h1 className="font-bold text-5xl text-slate-800">{slide?.title}</h1>
+                <p className="text-sm italic py-3 text-gray-100">{slide?.subtitle}</p>
               
-              <Link href={slide.link}>
-              <button className="font-bold bg-lime-400 px-5 text-sm hover:bg-lime-600 transition ease-in duration-200 py-2">{slide.buttonText}</button>
+              <Link href={slide?.link}>
+              <button className="font-bold bg-lime-400 px-5 text-sm hover:bg-lime-600 transition ease-in duration-200 py-2">{slide?.buttonText}</button>
 
               </Link>
               </div>

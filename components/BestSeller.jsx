@@ -8,8 +8,8 @@ const BestSeller = () => {
     <>
       
       <div className="w-full grid grid-cols-3 py-3 gap-3">
-        {product.products.slice(3,9).map((item, index) => (
-          <div key={item.id} className="">
+        {product?.products?.slice(3,9).map((item, index) => (
+          <div key={item?.id} className="">
             {/* <h1>{item.name}</h1> */}
             <ProductCard data={item} />
           </div>

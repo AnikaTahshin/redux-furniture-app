@@ -7,7 +7,7 @@ const ProductCard = ({ data }) => {
   return (
     <div className="w-full h-full group cursor-pointer">
       <div className="relative  overflow-hidden">
-        <Image src={`/` + data.images[0]} alt="" width={450} height={400} />
+        <Image src={`/` + data?.images[0]} alt="" width={450} height={400} />
         <div className="absolute -bottom-10 w-full transition-all duration-500 ease-in-out group-hover:bottom-2 flex justify-center">
           <button className=" w-11/12 mx-auto bg-lime-200 hover:bg-lime-400 transition-all duration-200 ease-linear py-2 ">
             Add to cart
@@ -27,8 +27,8 @@ const ProductCard = ({ data }) => {
 
       <div className="py-4 px-5">
         <div className="flex justify-between items-center">
-          <h1 className="font-bold">{data.name}</h1>
-          <h4 className="font-bold text-lime-500">{data.price}</h4>
+          <h1 className="font-bold">{data?.name}</h1>
+          <h4 className="font-bold text-lime-500">{data?.price}</h4>
         </div>
       </div>
     </div>

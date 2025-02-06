@@ -32,9 +32,9 @@ const Navbar = () => {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <ul className="flex gap-2 justify-center items-center">
-            {navItems.map((item, index) => (
+            {navItems?.map((item, index) => (
               <li key={index}>
-                <Link href={item.path}>{item.label}</Link>
+                <Link href={item?.path}>{item?.label}</Link>
               </li>
             ))}
           </ul>
