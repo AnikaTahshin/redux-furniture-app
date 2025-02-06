@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react'
 import category from '../public/img/Category/categories.json'
 import Image from 'next/image'
